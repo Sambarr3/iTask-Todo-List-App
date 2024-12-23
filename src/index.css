@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Full-page animated gradient background */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top right, #ff7eb3, #ff758c, #42a5f5, #ab47bc);
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+/* Glassmorphism container */
+.container {
+  background: rgba(255, 255, 255, 0.2); /* Transparent white */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  border-radius: 15px; /* Rounded corners */
+  padding: 2rem;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Heading and text styling */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Customize scrollbar for Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Set scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Light track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4); /* Thumb with transparency */
+  border-radius: 4px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6); /* Brighter thumb on hover */
+}
+
+/* Scrollbar styling for Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.1); /* Thumb and track colors */
+}

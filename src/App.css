@@ -1,0 +1,108 @@
+.cont {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  color: black;
+  box-sizing: border-box;
+}
+
+.nav {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Style for the input box */
+.input-box {
+  width: 100%;
+  max-width: 90%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-box:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+}
+
+.input-box:hover {
+  border-color: #9ca3af;
+}
+
+.checkbox-custom {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #4f46e5;
+  border-radius: 0.25rem;
+  background-color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.checkbox-custom:checked {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.checkbox-custom:checked::after {
+  content: "✔";
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.checkbox-custom:hover {
+  border-color: #4338ca;
+  transform: scale(1.1);
+}
+
+.checkbox-minimal {
+  appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #4f46e5;
+  border-radius: 0.25rem;
+  background-color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.checkbox-minimal:checked {
+  background-color: #4f46e5;
+}
+
+.checkbox-minimal:checked::after {
+  content: "✔";
+  font-size: 0.8rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* Label for minimal checkbox */
+.checkbox-label {
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+.checkbox-label:hover {
+  color: #4f46e5;
+}
